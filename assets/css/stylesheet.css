@@ -62,7 +62,7 @@ h3 {
 .hero-section {
   background-image: url(../images/hero3.jpeg);
   /* background-color: rgba(32, 183, 252, 1); */
-  border-radius: 250px;
+  border-radius: 50px;
   border: 15px outset rgba(32, 183, 252, 0.5);
 
   background-repeat: no-repeat;
@@ -92,7 +92,7 @@ h3 {
     32,
     183,
     252,
-    1
+    0.7
   ); /* Apply background color to h1 and p */
   border-radius: 10px; /* Add border radius */
   padding-left: 2rem; /* Add padding to the left */
@@ -207,6 +207,7 @@ i {
     justify-content: center;
   }
   .hero-container h1 {
+    font-size: 1.5rem;
     background-color: rgba(
       32,
       183,
@@ -216,6 +217,13 @@ i {
     border-radius: 10px; /* Add border radius */
     padding-left: 2rem; /* Add padding to the left */
     padding-right: 2rem; /* Add padding to the right */
+    margin-bottom: 10rem;
+  }
+
+  .hero-container .btn {
+    font-size: 0.75rem;
+    margin-bottom: 2rem;
+    
   }
 
   .card {
@@ -235,8 +243,10 @@ i {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .hero-section {
-    /* justify-content: flex-end; */
+  .hero-section h1{
+  font-size: 2rem;
+  margin-bottom: 0rem;
+  margin-top: 10rem;
   }
 
   .card {
@@ -250,8 +260,10 @@ i {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .hero-section {
-    justify-content: flex-end;
+  .hero-section
+  h1 {
+    margin-top: 10rem;
+    
   }
 
   .card {
@@ -268,6 +280,7 @@ i {
   }
 
   .hero-section h1 {
+    margin-top: 10rem;
     font-size: 4rem;
   }
 
