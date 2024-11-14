@@ -1,0 +1,276 @@
+/*FONT IMPORT*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Space+Grotesk:wght@300..700&display=swap");
+
+/*CSS VARIABLES*/
+:root {
+  --primary-font: "Nunito", sans-serif;
+  --secondary-font: "Space Grotesk", sans-serif;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--secondary-font);
+  color: #afd746;
+}
+
+/* Custom styles for the navbar */
+.navbar-brand img {
+  max-height: 50px;
+}
+
+.navbar-brand {
+  padding-left: 2rem;
+  
+}
+
+#logo {
+  color: white;
+  padding-top: 5px;
+}
+
+
+.navbar-nav .nav-link {
+  color: white;
+  font-family: var(--primary-font);
+  font-size: larger;
+}
+
+.navbar-nav .nav-link:hover {
+  color: white;
+  background-color: rgba(175, 215, 70, 0.5);
+  border-radius: 10px;
+}
+
+.navbar-nav {
+  margin-left: auto; /* Align links to the right */
+  padding-right: 100px;
+}
+
+.navbar {
+  background-color: rgba(32, 183, 252, 1);
+  position: fixed; /* Ensure navbar is fixed */
+  width: 100%; /* Ensure it spans the full width */
+  max-height: auto;
+}
+
+/*HERO SECTION*/
+.hero-section {
+  background-image: url(../images/Hero_frog.jpeg);
+  /* background-color: rgba(32, 183, 252, 1); */
+
+  background-repeat: no-repeat;
+  min-height: 50vw;
+  background-size: cover;
+  background-position: center;
+  background-attachment: relative;
+  width: 100%;
+  /* max-width: 1792px; */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 2rem;
+  /* margin-top: -100px; /*Move the hero section up to reach the top of the screen/* */
+  /* padding-top: 50px; Add padding to the top to account for the navbar height */
+}
+
+/* .hero-container {
+  /* padding-bottom: 10rem; */
+
+
+.hero-container h1 {
+  background-color: rgba(32, 183, 252, 1); /* Apply background color to h1 and p */
+  border-radius: 10px; /* Add border radius */
+  padding-left: 2rem; /* Add padding to the left */
+  padding-right: 2rem; /* Add padding to the right */
+}
+
+#card-heading {
+  background-color: rgba(32, 183, 252, 1);
+  color: white;
+  padding-top: 100px;
+
+}
+
+#card-heading h1 {
+  padding-bottom: 75px;
+}
+
+
+#card-paragraph {
+ padding-top: 30px;
+ font-size: 1.5rem;
+}
+
+.card-body .card-title,
+h5 {
+  font-family: var(--secondary-font);
+  color: #afd746;
+}
+
+.card-text {
+  font-family: var(--primary-font);
+}
+
+.card-img-top {
+  object-fit: cover; /* Ensure the image covers the entire card */
+}
+
+
+.card-body {
+  min-height: 200px;
+}
+
+.resource-cards {
+  margin-top: 2rem;
+}
+
+.card {
+  margin-bottom: 1rem;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(32, 183, 252, 1);
+  border: 5px outset rgba(32, 183, 252, 0.5);
+  
+}
+
+.resource-cards img {
+  max-height: auto;
+  object-fit: scale-down;
+  width: 100%;
+}
+
+.resource-cards
+.card-body {
+  min-height: auto;
+}
+
+.resource-cards
+.btn {
+  background-color: rgba(32, 183, 252, 1);
+}
+
+.resource-cards
+.btn:hover {
+  background-color: #afd746;
+}
+
+#resources-text
+p {
+  font-family: var(--secondary-font);
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #afd746;
+}
+
+#contact-us
+.btn {
+  background-color: rgba(32, 183, 252, 1);
+}
+
+#contact-us
+.btn:hover {
+  background-color: #afd746;
+}
+
+.hero-container
+.btn {
+  background-color: rgba(32, 183, 252, 1);
+  color: white;
+}
+
+.hero-container
+.btn:hover {
+  background-color: #afd746;
+}
+
+#contact-us {
+  font-family: var(--primary-font);
+}
+
+#contact-us h2 {
+  color: #afd746; /* Replace with your desired color */
+}
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 768px) {
+  .hero-section {
+    justify-content: center;
+  }
+  .hero-container h1 {
+    background-color: rgba(32, 183, 252, 0.5); /* Apply background color to h1 and p */
+    border-radius: 10px; /* Add border radius */
+    padding-left: 2rem; /* Add padding to the left */
+    padding-right: 2rem; /* Add padding to the right */
+  }
+
+
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  #card-paragraph {
+    font-size: 1rem;
+  }
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero-section {
+    justify-content: flex-end;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  #card-paragraph {
+    font-size: 1rem;
+  }
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .hero-section {
+    justify-content: flex-end;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .hero-section {
+    justify-content: center;
+  }
+
+  .hero-section h1 {
+    font-size: 4rem;
+  }
+
+  .hero-container {
+    padding-top: 20rem;
+  }
+
+  .card-body {
+    min-height: 275px;
+  }
+}
