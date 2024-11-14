@@ -27,14 +27,12 @@ h3 {
 
 .navbar-brand {
   padding-left: 2rem;
-  
 }
 
 #logo {
   color: white;
   padding-top: 5px;
 }
-
 
 .navbar-nav .nav-link {
   color: white;
@@ -89,31 +87,31 @@ h3 {
 /* .hero-container {
   /* padding-bottom: 10rem; */
 
-
 .hero-container h1 {
-  background-color: rgba(32, 183, 252, 1); /* Apply background color to h1 and p */
+  background-color: rgba(
+    32,
+    183,
+    252,
+    1
+  ); /* Apply background color to h1 and p */
   border-radius: 10px; /* Add border radius */
   padding-left: 2rem; /* Add padding to the left */
   padding-right: 2rem; /* Add padding to the right */
 }
 
-
-
 #card-heading {
   background-color: rgba(32, 183, 252, 1);
   color: white;
   padding-top: 100px;
-
 }
 
 #card-heading h1 {
   padding-bottom: 75px;
 }
 
-
 #card-paragraph {
- padding-top: 30px;
- font-size: 1.5rem;
+  padding-top: 30px;
+  font-size: 1.5rem;
 }
 
 .card-body .card-title,
@@ -130,7 +128,6 @@ h5 {
   object-fit: cover; /* Ensure the image covers the entire card */
 }
 
-
 .card-body {
   min-height: 200px;
 }
@@ -143,10 +140,15 @@ h5 {
   margin-bottom: 1rem;
 }
 
+.carousel-control-prev .carousel-control-next,
+i {
+  font-size: 2rem;
+  color: rgba(32, 183, 252, 1);
+}
+
 .card:not(.hero-card):hover {
   box-shadow: 0 0 10px rgba(32, 183, 252, 1);
   border: 5px outset rgba(32, 183, 252, 0.5);
-  
 }
 
 .resource-cards img {
@@ -155,47 +157,39 @@ h5 {
   width: 100%;
 }
 
-.resource-cards
-.card-body {
+.resource-cards .card-body {
   min-height: auto;
 }
 
-.resource-cards
-.btn {
+.resource-cards .btn {
   background-color: rgba(32, 183, 252, 1);
 }
 
-.resource-cards
-.btn:hover {
+.resource-cards .btn:hover {
   background-color: #afd746;
 }
 
-#resources-text
-p {
+#resources-text p {
   font-family: var(--secondary-font);
   font-size: 2rem;
   margin-top: 2rem;
   color: #afd746;
 }
 
-#contact-us
-.btn {
+#contact-us .btn {
   background-color: rgba(32, 183, 252, 1);
 }
 
-#contact-us
-.btn:hover {
+#contact-us .btn:hover {
   background-color: #afd746;
 }
 
-.hero-container
-.btn {
+.hero-container .btn {
   background-color: rgba(32, 183, 252, 1);
   color: white;
 }
 
-.hero-container
-.btn:hover {
+.hero-container .btn:hover {
   background-color: #afd746;
 }
 
@@ -207,21 +201,22 @@ p {
   color: #afd746; /* Replace with your desired color */
 }
 
-
-
-
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 768px) {
   .hero-section {
     justify-content: center;
   }
   .hero-container h1 {
-    background-color: rgba(32, 183, 252, 0.5); /* Apply background color to h1 and p */
+    background-color: rgba(
+      32,
+      183,
+      252,
+      0.5
+    ); /* Apply background color to h1 and p */
     border-radius: 10px; /* Add border radius */
     padding-left: 2rem; /* Add padding to the left */
     padding-right: 2rem; /* Add padding to the right */
   }
-
 
   .card {
     margin-bottom: 1rem;
@@ -231,7 +226,11 @@ p {
     font-size: 1rem;
   }
 
-
+  .carousel-control-prev .carousel-control-next,
+  i {
+    font-size: 2rem;
+    color: rgba(32, 183, 252, 0);
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -247,7 +246,6 @@ p {
   #card-paragraph {
     font-size: 1rem;
   }
-  
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -259,10 +257,7 @@ p {
   .card {
     /* margin-bottom: 1rem; */
   }
-
 }
-
-
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -283,9 +278,6 @@ p {
   }
 
   .card-body {
-    min-height: 225px;
+    min-height: 235px;
   }
-
-
 }
- 
