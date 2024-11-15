@@ -63,7 +63,7 @@ h3 {
   background-image: url(../images/hero3.jpeg);
   /* background-color: rgba(32, 183, 252, 1); */
   border-radius: 50px;
-  border: 15px outset rgba(32, 183, 252, 0.5);
+  border: 5px outset rgba(32, 183, 252, 0.5);
 
   background-repeat: no-repeat;
   /* min-height: 50vw; */
