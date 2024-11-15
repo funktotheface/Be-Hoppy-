@@ -47,14 +47,17 @@ h3 {
 }
 
 .navbar-nav {
-  margin-left: auto; /* Align links to the right */
+  margin-left: auto;
+  /* Align links to the right */
   padding-right: 100px;
 }
 
 .navbar {
   background-color: rgba(32, 183, 252, 1);
-  position: fixed; /* Ensure navbar is fixed */
-  width: 100%; /* Ensure it spans the full width */
+  position: fixed;
+  /* Ensure navbar is fixed */
+  width: 100%;
+  /* Ensure it spans the full width */
   max-height: auto;
 }
 
@@ -88,15 +91,14 @@ h3 {
   /* padding-bottom: 10rem; */
 
 .hero-container h1 {
-  background-color: rgba(
-    32,
-    183,
-    252,
-    0.7
-  ); /* Apply background color to h1 and p */
-  border-radius: 10px; /* Add border radius */
-  padding-left: 2rem; /* Add padding to the left */
-  padding-right: 2rem; /* Add padding to the right */
+  background-color: rgba(32, 183, 252, 0.7);
+  /* Apply background color to h1 and p */
+  border-radius: 10px;
+  /* Add border radius */
+  padding-left: 2rem;
+  /* Add padding to the left */
+  padding-right: 2rem;
+  /* Add padding to the right */
 }
 
 #card-heading {
@@ -125,7 +127,8 @@ h5 {
 }
 
 .card-img-top {
-  object-fit: cover; /* Ensure the image covers the entire card */
+  object-fit: cover;
+  /* Ensure the image covers the entire card */
 }
 
 .card-body {
@@ -198,32 +201,36 @@ i {
 }
 
 #contact-us h2 {
-  color: #afd746; /* Replace with your desired color */
+  color: #afd746;
+  /* Replace with your desired color */
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 768px) {
   .hero-section {
     justify-content: center;
+    border: none;
+    border-radius: 0px;
+
+    width: 100vw;
   }
+
   .hero-container h1 {
     font-size: 1.5rem;
-    background-color: rgba(
-      32,
-      183,
-      252,
-      0.5
-    ); /* Apply background color to h1 and p */
-    border-radius: 10px; /* Add border radius */
-    padding-left: 2rem; /* Add padding to the left */
-    padding-right: 2rem; /* Add padding to the right */
+    background-color: rgba(32, 183, 252, 0.5);
+    /* Apply background color to h1 and p */
+    border-radius: 10px;
+    /* Add border radius */
+    padding-left: 2rem;
+    /* Add padding to the left */
+    padding-right: 2rem;
+    /* Add padding to the right */
     margin-bottom: 10rem;
   }
 
   .hero-container .btn {
     font-size: 0.75rem;
-    margin-bottom: 2rem;
-    
+    margin-bottom: 5rem;
   }
 
   .card {
@@ -243,10 +250,10 @@ i {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .hero-section h1{
-  font-size: 2rem;
-  margin-bottom: 0rem;
-  margin-top: 10rem;
+  .hero-section h1 {
+    font-size: 2rem;
+    margin-bottom: 0rem;
+    margin-top: 10rem;
   }
 
   .card {
@@ -260,17 +267,13 @@ i {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .hero-section
-  h1 {
+  .hero-section h1 {
     margin-top: 10rem;
-    
   }
 
   .card {
     margin-bottom: 1rem;
   }
-
-  
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
